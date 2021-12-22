@@ -106,7 +106,21 @@ header{
 /*  */
 /* 서브메뉴 */
 /*  */
-.menu > ul > li > .div_sub_mnu{
+/* .menu > ul > li > .div_sub_mnu {
+	width: 100%;
+    margin: 0;
+    background: #f3f3f3;
+    padding: 14px 0;
+    
+}
+.menu > ul > li > .div_sub_mnu_open {
+	width: 100%;
+    margin: 0;
+    background: #f3f3f3;
+    padding: 14px 0;
+    
+} */
+.div_sub_mnu_open {
 	width: 100%;
     margin: 0;
     background: #f3f3f3;
@@ -129,7 +143,11 @@ header{
 	
 }
 
-/* 주 메뉴에 마우스 오버했을 때 부 메뉴 표시하기 */
+/* 주 메뉴 클릭시 부 메뉴 표시하기 */
+.div_sub_mnu_open {
+	display: block;
+}
+
 #btn:checked ~ .div_sub_mnu {
 	display: block;
 }

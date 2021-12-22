@@ -9,7 +9,8 @@
 <body>
 
 <%
-response.sendRedirect("http://15.165.137.195:8090/LibraryProject/LS?command=main");
+//response.sendRedirect("http://15.165.137.195:8090/LibraryProject/LS?command=main");
+response.sendRedirect("http://localhost:8090/LibraryProject/LS?command=main");
 %>
 
 </body>

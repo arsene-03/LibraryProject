@@ -8,8 +8,8 @@
     </h1>
     <nav class="menu">
 	        <ul>
-                <li>
-                	<div id="btn" onclick="">지혜의숲</div>
+                <li id="btn">
+                	<a href="#" >지혜의숲</a>
                 	<ul class="div_sub_mnu">
                 		<li><a href="${pageContext.request.contextPath}/LS?command=forest#firstPage">지혜의숲 소개</a></li>
                 		<li><a href="${pageContext.request.contextPath}/LS?command=forest#secondPage">공간별 이용 안내</a></li>
@@ -17,15 +17,15 @@
                 	</ul>
                 </li>
                 <li><a href="${pageContext.request.contextPath}/LS?command=customBoard_action">자원봉사</a></li>
-                <li>
-                	<a href="${pageContext.request.contextPath}/LS?command=sponsor_action">후원안내</a>
+                <li id="btn2">
+                	<a href="#">후원안내</a>
                 	<ul class="div_sub_mnu">
                 		<li><a href="${pageContext.request.contextPath}/LS?command=sponsor_action">후원안내</a></li>
                 		<li><a href="${pageContext.request.contextPath}/LS?command=sponsorInput_action">후원정보</a></li>
                 	</ul>
                 </li>
-                <li>
-                	<a href="">공지사항/이벤트</a>
+                <li id="btn3">
+                	<a href="#">공지사항/이벤트</a>
                 	<ul class="div_sub_mnu">
                 		<li><a href="${pageContext.request.contextPath}/LS?command=SelectBoardList&type=notice">공지사항</a></li>
                 		<li><a href="${pageContext.request.contextPath}/LS?command=SelectBoardList&type=event">이벤트</a></li>
@@ -67,4 +67,24 @@
 
     	</ul>
     </div>
+    <script>
+    	var a = document.getElementById("btn");
+    	var b= document.getElementById("btn2");
+    	var c = document.getElementById("btn3");
+    	a.addEventListener('click', openSubMenu);
+    	b.addEventListener('click', openSubMenu);
+    	c.addEventListener('click', openSubMenu);
+    	
+    	function openSubMenu(event) {
+    		console.log('aaa');
+    		var event_subMenu_open = event.target.parentNode.getElementsByClassName('div_sub_mnu')[0];
+    		var event_subMenu_close = event.target.parentNode.getElementsByClassName('div_sub_mnu_open')[0];
+    		
+    		if(event_subMenu_open !== undefined){
+    			event_subMenu_open.classList.replace('div_sub_mnu','div_sub_mnu_open');
+    		} else {
+    			event_subMenu_close.classList.replace('div_sub_mnu_open','div_sub_mnu');
+    		}
+    	}
+    </script>
 </header>
