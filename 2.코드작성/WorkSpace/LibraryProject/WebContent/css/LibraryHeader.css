@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+
+/*  */
+/* header */
+/*  */
+
+header{
+	font-family: "Noto_DL";
+	position: fixed;
+	top: 0;
+ 	left: 0;
+    background-color: rgb(21, 21, 21);
+    margin-left: 0;
+    margin-right: 0;
+    height: 100vh;
+
+}
+
+
+.logo{
+    margin: 61px 0 0 31px;
+    height: 50px;
+    width: 118px;
+}
+
+
+
+
+.menu{
+	
+	width: 180px;
+	margin-top: 180px; 
+	
+}
+
+/* .menu ul{
+	margin:0; 
+	padding:0;
+	display: flex;
+	flex-direction: column;
+} */
+
+
+
+.menu ul li{
+	/*
+	margin:0; 
+	padding:0;
+	*/
+
+	/*
+	line-height: 20px;
+	*/
+	
+	
+}
+.menu ul li a{
+	display: block;
+	margin:  10px 30px;
+	font-size: 1.21em;
+	color: white;
+	letter-spacing:-1px;
+	height: 20px;
+	
+}
+
+
+
+.banner_link{
+	width: 180px;
+	margin:0; 
+	padding:0;
+	margin-top: 45px;
+
+
+
+	
+}
+
+
+.banner_link ul li{
+	padding: 15px 31px;
+	
+}
+
+.banner_link ul li:first-child{
+	background-color: rgb(94, 16, 18);
+	font-size: 17px;
+}
+
+.banner_link ul li:nth-of-type(1) > a {
+	color: white;
+}
+.banner_link ul li:nth-of-type(1n+2) > a{
+	color: gray;
+
+}
+
+
+.banner_footer{
+	font-size: 12px; 
+}
+
+
+/*  */
+/* 서브메뉴 */
+/*  */
+.menu > ul > li > .div_sub_mnu{
+	width: 100%;
+    margin: 0;
+    background: #f3f3f3;
+    padding: 14px 0;
+    
+}
+
+.menu > ul > li > ul > li > a{
+	margin: 0;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	display: block;
+	font-size: 1em;
+	color: black;
+	cursor: pointer;
+}
+/* 부 메뉴 숨겨놓기 */
+.div_sub_mnu {
+	display: none;
+	
+}
+
+/* 주 메뉴에 마우스 오버했을 때 부 메뉴 표시하기 */
+#btn:checked ~ .div_sub_mnu {
+	display: block;
+}
+
+/*메뉴창에 화살표 넣기. */
+.menu ul ul li{
+	position: relative;
+}
+/* 
+	:after :before 가상클래스
+	
+	after는 뒤에 생성하는 건데 li 뒤에 content로로 내용을 넣는다. 라는 의미임 어찌보면 독립적인
+	느낌임 그래서 ul ul li가 relative로 되어있기 떄문에. 이걸 부모요소로  인식하고
+	after는  ul ul li:after이니  ul ul li를 기준으로  부모요소로 해서  생성하겠다.
+	그러면 왜 li태그 뒤에 생성되는ㄱ게 아니냐? 할 수 있는데.
+	li태그 안에 a 태그 가  있기 때문에 li마지막이라도 해도 a태그는 자식요소이니 li뒤지만 a태그 앞에 생성되나봄.  
+*/
+.menu ul ul li:hover:after{
+	content: ""; position: absolute; left: 10px; top: 5px;
+	border-width:5px; border-style: solid;
+	border-color: transparent transparent  transparent red;
+}
+
+

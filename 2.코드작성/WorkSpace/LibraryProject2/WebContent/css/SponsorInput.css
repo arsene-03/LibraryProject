@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+/*여기가 내려 쓰는거. */
+.container {
+	position: relative;
+	margin-top: -40px;
+	width: 100%;
+	height: 100vh;
+}
+
+.sponsorGuide {
+	padding-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/* margin 0 auto */
+.sponsorGuide_SponsorInput {
+	width: 1200px;
+	padding-top: 40px;
+	margin: 0 auto;
+	overflow: hidden
+}
+/*후원정보 */
+.sponsorGuide_Sponsor	 h3 {
+	font-size: 1.86em;
+	font-family: "Noto_B";
+	letter-spacing: -0.05em;
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+
+
+.join_form.sponsor_form .sec_tit {
+	margin-top: 60px;
+	font-size: 1.14em;
+	color: #333;
+	margin-bottom: 10px;
+	font-family: "Noto_M";
+}
+
+.join_form.sponsor_form .row {
+	overflow: hidden;
+	border-top: 2px solid #464646;
+}
+
+.row .half{
+	float: left;
+    width: 50%;
+}
+
+
+.row_sub{
+	overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    
+}
+.row_sub li{
+	float: left;
+}
+
+
+.filed{
+	width: 150px;
+    height: 50px;
+    padding: 15px 20px;
+    background: #f6f6f6;
+    font-family: "Noto_M"; 
+    letter-spacing: -0.08em;
+}
+
+.inp_form{
+	display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+}
+
+

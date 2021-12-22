@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+  
+    position: relative;
+    
+}
+
+
+
+#login_box {
+   	border: 2px solid #e4e4e4;
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    margin-left:-250px;
+    top: 50%;
+    margin-top: -125px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+.login_ImgColor{
+	 background-color: #5f7368;	
+	     padding-top: 12.5px;
+         padding-bottom: 12.5px;
+	     margin-bottom: 12.5px;
+         text-align: center;
+         color:white;
+}
+img {
+   
+
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    height: 34px;
+    padding: 24px;
+    border: 1px solid #e4e4e4;
+}
+ 
+input[type="submit"],
+input[type="button"] {
+    width: 48%;
+    height: 34px;
+    padding: 24px;
+    border: none;
+    line-height: 10px;
+    color: #fff !important;
+    border: 0;
+    text-align: center;
+    background: #71847a;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+} 
+
+
+.Loginbtn {
+    margin-top: 5px;
+    
+    width: 90%;
+    display: inline-block;
+}
+.Loginbtn :nth-child(1){
+    float: left;
+}
+.Loginbtn :nth-child(2){
+    float: right;
+}
+#idchkInputText{
+    width: 60%;
+}
+#idchkInputTextBtn{
+    display: inline-block;
+    padding: 0;
+    width: 20%;
+    height: 50px;
+    font-size: 1.0em;
+}
+
+
+.idChkForm{
+    width: 100%;
+    text-align: center;
+}
+.idChkForm_1{
+    width: 90%;
+    margin: 0 auto;
+}
+#idchkInputlabel{
+    width: 10%;
+}
+.idChkResult{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    
+    
+}
+.idChkResult_1{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #e4e4e4;
+    text-align: center;
+    
+}
+#idchkUseBtn{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+

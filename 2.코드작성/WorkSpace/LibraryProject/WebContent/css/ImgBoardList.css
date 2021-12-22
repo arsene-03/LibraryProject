@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.full_contents {
+	position: relative; 
+	width: 100%;
+	height: 100vh;
+	margin-top: -40px;
+}
+
+.sub_contents {
+	margin-top: 80px;
+	height: 100%;
+}
+
+.defalut_article {
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.convenience_lst {
+	overflow: hidden;
+	margin: 0 0 70px -40px;
+	display: flex;
+	flex-wrap: wrap;
+	 
+}
+
+.sub_inner.Convenience ul li {
+	width:30%;
+	border: 1px solid black;
+	margin: 40px 0 0 40px;
+}

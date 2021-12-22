@@ -1,0 +1,23 @@
+package com.library.controller.action;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class InsertBoard_form_action implements Action {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String url = "board/insertBoard.jsp";
+		
+		String type = request.getParameter("type");
+		
+		request.setAttribute("type", type);
+		RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+		dispatcher.forward(request, response);
+	}
+
+}

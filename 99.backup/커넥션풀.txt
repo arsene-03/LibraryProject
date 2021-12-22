@@ -1,0 +1,3 @@
+<Context docBase="LibraryProject" path="/LibraryProject" reloadable="true" source="org.eclipse.jst.jee.server:LibraryProject">
+      	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@db.interstander.com:41521:xe" username="cono"/>
+      </Context>

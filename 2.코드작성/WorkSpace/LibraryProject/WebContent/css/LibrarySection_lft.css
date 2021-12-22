@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.lft_con_section {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.ltf_con_slides {
+	height: 100%; 
+	width: 300%;
+	position: absolute;
+	left: 0px;
+	transition: all ease 0.5s 0s;
+}
+
+/* 
+.ltf_con_slides [class*="ltf_con_slides_img"] {
+	
+}
+*/
+
+/* 슬라이드 이미지 그림 가운데로 하고 커버에 맞춰서 */
+.ltf_con_slides_img{
+	width: 33.3333%;
+	height: 100%;
+	background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
+	float: left;
+}
+
+
+
+.ltf_con_slides_img:nth-of-type(1) {
+	background-image: url("../img/main_slider_01.jpg");
+}
+
+.ltf_con_slides_img:nth-of-type(2) {
+	background-image: url("../img/main_slider_02.jpg");
+}
+
+.ltf_con_slides_img:nth-of-type(3) {
+	background-image: url("../img/main_slider_03.jpg");
+}
+
+.ltf-con-btn-floating {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.ltf-con-btn-floating.img1 {
+	background-image: url("../img/ico_main_slider_prev.png");
+	top: 45%;
+	left: 5%;
+}
+
+.ltf-con-btn-floating.img2 {
+	background-image: url("../img/ico_main_slider_next.png");
+	top: 45%;
+	right: 5%;
+}
+/* 왼쪽버튼*/
+.ltf_btnlft {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 20px;
+	background-image: url(../img/ico_main_slider_prev.png);
+	cursor: pointer;
+}
+/* 오른쪽버튼 */
+.ltf_btnrgt {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	background-image: url(../img/ico_main_slider_next.png);
+	cursor: pointer;
+}
+
+/* 밑버튼 */
+.ltf_con_btn_bottom ul li {
+	list-style-type: none;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 0px 2px;
+}
+.ltf_con_btn_bottom ul li:hover{
+	background-color: red;
+}
+
+.ltf_con_btn_bottom {
+	position: absolute;
+	text-align: center;
+	width: 150px;
+	height: 20px;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ltf_btn_move {
+	background-color: white;
+	/*border-color: white;*/
+	/* border: 6px white solid;*/
+	cursor: pointer;
+}
+
+/* 글자 */
+.ltf_con_slides_letter {
+	position: absolute;
+	transition: all ease 0.5s 0s;
+	width: 300%;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+}
+
+.ltf_con_slides_text {
+	width: 33.3333%;
+	color: white;
+	padding: 0px 5%;
+	text-align: center;
+	font: normal 14px/1.5 "Noto_DL", Dotum, arial, Tahoma;
+	font-family: "Noto_M";
+	float: left;
+}
+
+.ltf_con_slides_text p{
+	font-family: "Noto_M";
+	font-size: 1.5em;
+}
+
+.ltf_con_slides_text span{
+	font-size: 3.85em;	
+	font-family: "Noto_B";
+}
+
+
+.clicked {
+	background-color: red;
+	/* border-color: red; */
+	
+}
