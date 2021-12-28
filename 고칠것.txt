@@ -1,0 +1,4 @@
+insert_board 제목 입력칸 가로 넓이
+notice 불러오기 역순
+notice 게시물 하단 첨부파일
+notice 페이징 이미지 x

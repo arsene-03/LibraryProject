@@ -133,7 +133,7 @@ public class LibraryDAO {
 /////////////////////////////////////////////////////////////////
 	public List<BoardVO> selectBoardList(String type) { //게시판 조회 메서드
 		
-		String sql = "SELECT * FROM board WHERE board_type = ? ORDER BY board_idx";
+		String sql = "SELECT * FROM board WHERE board_type = ? ORDER BY board_idx DESC";
 		
 		List<BoardVO> boardList = new ArrayList<>();
 		
@@ -595,6 +595,7 @@ public class LibraryDAO {
 	}
 /////////////////////////////////////////////////////////////////
 	public List<BoardVO> selectTargetBoard(int section, int pageNum, String type) { //10개씩 페이징 하는 메서드
+		System.out.println("페이징하여 로드");
 		List<BoardVO> boardList = new ArrayList<>();
 		
 		String sql = 
@@ -607,7 +608,7 @@ public class LibraryDAO {
 				"SELECT * FROM"+ 
 				"(SELECT @ROWNUM:=@ROWNUM+1 as ROWNUM, board_idx, board_title, member_id, member_pwd, board_content, board_time, board_type, "+ 
 					"board_count, board_picture, board_picture2, board_picture3, board_picture4, board_picture5, board_picture6 "+
-						"FROM (SELECT * FROM `board` WHERE board_type = ? ORDER BY board_idx)a)b "+
+						"FROM (SELECT * FROM `board` WHERE board_type = ? ORDER BY board_idx )a)b "+
 							"WHERE (SELECT @ROWNUM:=0)=0 BETWEEN (?-1)*100+(?-1)*10+1 AND (?-1)*100+?*10";
 
 		Connection conn = null;

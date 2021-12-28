@@ -19,11 +19,11 @@ public class DBManager_mariaDB {
 		try {
 			Class.forName(DB_DRIVER_CLASS);
 			conn = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_PASSWORD);
-			System.out.println("연결성공");
+			System.out.println("마리아DB_연결성공");
 		} catch (ClassNotFoundException e) {
 			System.out.println("드라이브 로딩 실패");
 		} catch (SQLException e) {
-			System.out.println("DB 연결 실패");
+			System.out.println("마리아DB_DB 연결 실패");
 		}
 		return conn;
 	}

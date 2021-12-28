@@ -11,19 +11,19 @@
 <meta charset="UTF-8">
 <title>공지사항 게시판 페이지</title>
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/LibraryAll.css?ver=9">
+	href="${pageContext.request.contextPath}/css/LibraryAll.css?ver=10">
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/LibraryHeader.css">
+	href="${pageContext.request.contextPath}/css/LibraryHeader.css?ver=1">
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/LibrarySection.css">
+	href="${pageContext.request.contextPath}/css/LibrarySection.css?ver=1">
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/LibrarySection_lft.css?ver=1">
+	href="${pageContext.request.contextPath}/css/LibrarySection_lft.css?ver=2">
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/LibrarySection_rgt.css">
+	href="${pageContext.request.contextPath}/css/LibrarySection_rgt.css?ver=1">
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/Libraryfooter.css">
+	href="${pageContext.request.contextPath}/css/Libraryfooter.css?ver=1">
 <link type="text/css" rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/frame.css?ver=31">
+	href="${pageContext.request.contextPath}/css/frame.css?ver=32">
 </head>
 <body id="firstPage">
 	<jsp:include page="/include/header.jsp" />
@@ -47,7 +47,7 @@
 								<input type="hidden" name="_section" value="">
 								<input type="hidden" name="_pageNum" value="">
 								<input type="text" name="searchText" class="searchText" placeholder="공지사항을 검색해 보세요">
-								<input type="image" src="./image/icon/btn_search.png" name="Submit" value="Submit" class="searchImg">
+								<input type="image" src="./icon/btn_search.png" name="Submit" value="Submit" class="searchImg">
 							</form>
 						</div>
 						</div>
@@ -76,45 +76,45 @@
 											<c:if test="${(section*100) < totalCnt}"><!-- >> -->
 												<c:forEach var="page" begin="1" end="10" step="1">
 													<c:if test="${section <=1 && page==1}">
-										<!-- 이전버튼 -->  <a href="#"><img alt="pre" src="image/icon/preBut.png"></a>
+										<!-- 이전버튼 -->  <a href="#"><img alt="pre" src="./icon/preBut.png"></a>
 													</c:if>
 													
 													<c:if test="${section >1 && page==1}">
-										<!-- 이전버튼 -->  <a href="LS?command=SelectBoardList&type=notice&section=${section-1}&pageNum=${10}"><img alt="pre" src="image/icon/preBut.png"></a>
+										<!-- 이전버튼 -->  <a href="LS?command=SelectBoardList&type=notice&section=${section-1}&pageNum=${10}"><img alt="pre" src="./icon/preBut.png"></a>
 													</c:if>
 													
 								        <!-- 페이지 넘버 --> <a href="LS?command=SelectBoardList&type=notice&section=${section}&pageNum=${page}"><SPAN class ="page_number">&nbsp;&nbsp;${(section-1)*10+page}&nbsp;&nbsp;</SPAN><c:if test="${page<10}"></c:if></a>
 													
 													<c:if test="${page == 10}">
-										<!-- 다음버튼 -->	<a href="LS?command=SelectBoardList&type=notice&section=${section+1}&pageNum=${1}"><img alt="next" src="image/icon/nextBut.png"></a>
+										<!-- 다음버튼 -->	<a href="LS?command=SelectBoardList&type=notice&section=${section+1}&pageNum=${1}"><img alt="next" src="./icon/nextBut.png"></a>
 													</c:if>
 												</c:forEach>
 											</c:if>
 											<c:if test="${(section)*100 > totalCnt}">
 												<c:forEach var="page" begin="1" end="${((totalCnt+9)-((section-1)*100))/10}" step="1">
 													<c:if test="${section >1 && page==1}">
-										<!-- 이전버튼 --> <a href="LS?command=SelectBoardList&type=notice&section=${section-1}&pageNum=${10}"><img alt="pre" src="image/icon/preBut.png"></a>
+										<!-- 이전버튼 --> <a href="LS?command=SelectBoardList&type=notice&section=${section-1}&pageNum=${10}"><img alt="pre" src="./icon/preBut.png"></a>
 													</c:if>	
 										<!-- 페이지 넘버 --><a href="LS?command=SelectBoardList&type=notice&section=${section}&pageNum=${page}"><SPAN class ="page_number">&nbsp;&nbsp;${(section-1)*10+page}&nbsp;&nbsp;</SPAN><c:if test="${page<10}"></c:if></a>
 												</c:forEach>
-										<!-- 다음버튼 -->	<a href="#"><img alt="next" src="image/icon/nextBut.png"></a>
+										<!-- 다음버튼 -->	<a href="#"><img alt="next" src="./icon/nextBut.png"></a>
 											</c:if>
 										</c:when>
 										
 										<c:when test="${totalCnt == 90}">
-										<!-- 이전버튼 -->  <a href="#"><img alt="pre" src="image/icon/preBut.png"></a>
+										<!-- 이전버튼 -->  <a href="#"><img alt="pre" src="./icon/preBut.png"></a>
 											<c:forEach var="page" begin="1" end="10" step="1">
 										<!-- 페이지 넘버 --><a href="LS?command=SelectBoardList&type=notice&section=${section}&pageNum=${page}"><SPAN class ="page_number">&nbsp;&nbsp;${(section-1)*10+page}&nbsp;&nbsp;</SPAN><c:if test="${page<10}"></c:if></a>
 											</c:forEach>
-										<!-- 다음버튼 -->	<a href="#"><img alt="next" src="image/icon/nextBut.png"></a>
+										<!-- 다음버튼 -->	<a href="#"><img alt="next" src="./icon/nextBut.png"></a>
 										</c:when>
 										
 										<c:when test="${totalCnt < 90}">
-										<!-- 이전버튼 --> <a href="#"><img alt="pre" src="image/icon/preBut.png"></a>
+										<!-- 이전버튼 --> <a href="#"><img alt="pre" src="./icon/preBut.png"></a>
 											<c:forEach var="page" begin="1" end="${(totalCnt+9)/10}" step="1">	
 										<!-- 페이지 넘버 --><a href="LS?command=SelectBoardList&type=notice&section=${section}&pageNum=${page}"><SPAN class ="page_number">&nbsp;&nbsp;${(section-1)*10+page}&nbsp;&nbsp;</SPAN><c:if test="${page<10}"></c:if></a>
 											</c:forEach>
-										<!-- 다음버튼 -->	<a href="#"><img alt="next" src="image/icon/nextBut.png"></a>
+										<!-- 다음버튼 -->	<a href="#"><img alt="next" src="./icon/nextBut.png"></a>
 										</c:when>
 									</c:choose>
 								</c:if>
