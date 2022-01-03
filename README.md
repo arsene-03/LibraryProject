@@ -31,15 +31,15 @@
      ![](https://img.shields.io/badge/SQL-%EC%9E%84%EC%A4%80%ED%98%81-orange?style=for-the-badge)
 
 
-## ⚒개발 환경(BACKEND)
+## ⚒개발 환경(Server)
 - JDK
 - Eclipse
 - Apache Tomcat
 
-## ⚒개발 환경(FRONTEND)
+## ⚒개발 환경(Client)
 - Visual Studio Code
 
-## ⚒개발 환경(DATABASE)
+## ⚒개발 환경(DataBase)
 - Orcle DB
 
 ## 📔협업
