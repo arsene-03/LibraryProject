@@ -24,7 +24,7 @@
         
   - **FRONTEND** 
 
-     ![](https://img.shields.io/badge/JACASCRIPT-%EB%B0%95%EC%8A%B9%ED%9B%88-blue?style=for-the-badge)
+     ![](https://img.shields.io/badge/JAVASCRIPT-%EB%B0%95%EC%8A%B9%ED%9B%88-blue?style=for-the-badge)
      
   - **DATABASE** 
 
