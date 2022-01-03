@@ -6,8 +6,9 @@
 
 ## 💫 기능
 
-- 도서관의 위치, 편의시설등 도서관 
-- gps기반 현재위치 및 주변 응급시설 검색
+- 도서관 위치, 편의시설등 도서관 물리적 서비스 소개
+- 이벤트, 공지사항 등 도서관 정보 서비스 제공
+- 이용자와 도서관간 원활한 의사소통을 위한 게시판 서비스 제공
 
 ## 📱 화면구성
 <img width="671" alt="스크린샷 2021-12-30 오후 7 11 13" src="https://user-images.githubusercontent.com/81343131/147911525-20770f33-2cc4-4d4b-a823-ff0a377c2bcf.png">
@@ -41,7 +42,8 @@
 - Visual Studio Code
 
 ## ⚒개발 환경(DataBase)
-- Orcle DB
+- ~~Orcle DB~~
+- MariaDB
 
 ## 📔협업
 - GitHub
