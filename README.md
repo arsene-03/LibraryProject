@@ -35,6 +35,7 @@
 - JDK
 - Eclipse
 - Apache Tomcat
+- AWS
 
 ## ⚒개발 환경(Client)
 - Visual Studio Code
@@ -44,4 +45,3 @@
 
 ## 📔협업
 - GitHub
-
